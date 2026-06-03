@@ -1,0 +1,63 @@
+{
+  "sku": "COSMO-DEMO-CARDHOLDER-001",
+  "name": {
+    "ka": "პერსონალიზებული ტყავის ბარათების ჩასადები",
+    "en": "Personalized Leather Cardholder"
+  },
+  "category": "cardholder",
+  "materials": [
+    {
+      "name": "genuine leather",
+      "source": "COSMO production stock",
+      "color": "deep green",
+      "isOffcut": true,
+      "notes": "Can be produced from carefully selected leather offcuts when suitable pieces are available."
+    }
+  ],
+  "dimensions": {
+    "heightCm": 7,
+    "widthCm": 10,
+    "depthCm": 0.5,
+    "weightGrams": 45
+  },
+  "colors": ["deep green", "black", "red", "tan"],
+  "personalization": {
+    "available": true,
+    "methods": ["initials", "engraving"],
+    "characterLimit": 8,
+    "productionNotes": "Confirm spelling before production. For corporate gifts, collect initials or logo requirements in a shared file."
+  },
+  "production": {
+    "method": "handmade",
+    "leadTimeDays": 3,
+    "teamNotes": "Small accessory suitable for workshop production, corporate gifts and offcut reuse.",
+    "repairAvailable": true
+  },
+  "story": {
+    "ka": "პატარა, ყოველდღიური ნივთი, რომელსაც პირადი ნიშანი აქვს. ბარათების ჩასადები მზადდება ხელით და შეიძლება შეიქმნას ტყავის დარჩენილი ნაჭრებისგანაც, როცა მასალა ზომითა და ხარისხით შესაბამისია.",
+    "en": "A small everyday object with a personal detail. This cardholder is handmade and can be produced from selected leather offcuts when the material size and quality are suitable.",
+    "craftNotes": "Cut, assembled, stitched and finished by hand in COSMO's production workflow.",
+    "originNotes": "Designed as a practical Georgian handmade accessory for personal or corporate gifting."
+  },
+  "circularity": {
+    "usesOffcuts": true,
+    "wasteStream": "leather offcuts",
+    "reuseDescription": "The product can help reuse smaller leather pieces that remain after bag production.",
+    "claimsReview": "Avoid claiming zero waste. Say that the product supports more responsible use of suitable leftover materials."
+  },
+  "ecommerce": {
+    "priceCurrency": "GEL",
+    "seoTitle": "Personalized Leather Cardholder Handmade in Georgia",
+    "metaDescription": "Handmade leather cardholder by COSMO with optional initials or engraving. A practical personalized gift crafted in Georgia.",
+    "careInstructions": {
+      "ka": "შეინახეთ მშრალ ადგილას. გაწმინდეთ რბილი, მშრალი ქსოვილით. საჭიროების შემთხვევაში მიმართეთ COSMO-ს შეკეთების სერვისს.",
+      "en": "Keep in a dry place. Clean with a soft dry cloth. Contact COSMO's repair service when needed."
+    },
+    "shippingNotes": "Suitable for local store pickup, courier delivery and international small-parcel shipping."
+  },
+  "b2b": {
+    "moq": 30,
+    "wholesaleNotes": "Suitable for corporate gifts, museum shops and concept stores looking for small personalized accessories.",
+    "buyerPositioning": "Accessible handmade Georgian gift item with personalization and responsible material-use story."
+  }
+}
