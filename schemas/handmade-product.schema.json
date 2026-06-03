@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/tamoaptsiauri3-ops/cosmohandmade/schemas/handmade-product.schema.json",
+  "title": "Handmade Product Record",
+  "description": "A structured product data model for handmade accessories, personalized gifts, workshop-made items and circular design objects.",
+  "type": "object",
+  "required": ["sku", "name", "category", "materials", "production", "ecommerce"],
+  "properties": {
+    "sku": {
+      "type": "string",
+      "description": "Internal product code or stock keeping unit."
+    },
+    "name": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "ka": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "category": {
+      "type": "string",
+      "examples": ["bag", "wallet", "cardholder", "belt", "corporate gift", "workshop product", "circular design object"]
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "source": { "type": "string" },
+          "color": { "type": "string" },
+          "isOffcut": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "heightCm": { "type": "number" },
+        "widthCm": { "type": "number" },
+        "depthCm": { "type": "number" },
+        "weightGrams": { "type": "number" }
+      }
+    },
+    "colors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "personalization": {
+      "type": "object",
+      "properties": {
+        "available": { "type": "boolean" },
+        "methods": {
+          "type": "array",
+          "items": { "type": "string", "examples": ["engraving", "initials", "hand painting", "color selection", "corporate logo"] }
+        },
+        "characterLimit": { "type": "integer" },
+        "productionNotes": { "type": "string" }
+      }
+    },
+    "production": {
+      "type": "object",
+      "required": ["method"],
+      "properties": {
+        "method": { "type": "string", "examples": ["handmade", "small batch", "workshop-made"] },
+        "leadTimeDays": { "type": "integer" },
+        "teamNotes": { "type": "string" },
+        "repairAvailable": { "type": "boolean" }
+      }
+    },
+    "story": {
+      "type": "object",
+      "properties": {
+        "ka": { "type": "string" },
+        "en": { "type": "string" },
+        "craftNotes": { "type": "string" },
+        "originNotes": { "type": "string" }
+      }
+    },
+    "circularity": {
+      "type": "object",
+      "properties": {
+        "usesOffcuts": { "type": "boolean" },
+        "wasteStream": { "type": "string", "examples": ["leather offcuts", "textile offcuts", "mixed production waste"] },
+        "reuseDescription": { "type": "string" },
+        "claimsReview": { "type": "string", "description": "Notes to keep sustainability language factual and non-exaggerated." }
+      }
+    },
+    "ecommerce": {
+      "type": "object",
+      "required": ["priceCurrency"],
+      "properties": {
+        "priceCurrency": { "type": "string", "examples": ["GEL", "USD", "EUR"] },
+        "seoTitle": { "type": "string" },
+        "metaDescription": { "type": "string" },
+        "careInstructions": { "type": "object", "properties": { "ka": { "type": "string" }, "en": { "type": "string" } } },
+        "shippingNotes": { "type": "string" }
+      }
+    },
+    "b2b": {
+      "type": "object",
+      "properties": {
+        "moq": { "type": "integer" },
+        "wholesaleNotes": { "type": "string" },
+        "buyerPositioning": { "type": "string" }
+      }
+    }
+  }
+}
